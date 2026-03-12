@@ -2,196 +2,74 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AQUADET CORPORATION</title>
-
-<style>
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f4f6f8;
-color:#333;
-}
-
-header{
-background:#0a3d62;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-nav{
-background:#062c44;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-padding:60px 20px;
-text-align:center;
-background:#e9f2f8;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-padding:40px 0;
-}
-
-h2{
-color:#0a3d62;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-
-footer{
-background:#062c44;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:40px;
-}
-
-.contact{
-background:#eef5fb;
-padding:30px;
-border-radius:8px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>AQUADET CORPORATION</h1>
-<p>Providing Excellence in Chemical Solutions</p>
-</header>
-
+<div class="nav">
+<h1>AQUADET</h1>
 <nav>
-<a href="#products">Products</a>
-<a href="#about">About</a>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
 <a href="#contact">Contact</a>
 </nav>
+</div>
+</header>
 
 <section class="hero">
-<h2>Industrial Water Treatment Chemicals</h2>
-<p>Reliable and efficient chemical solutions for boilers, cooling towers, RO systems and water treatment plants.</p>
+<h2>Providing Excellence in Chemical Solutions</h2>
+<p>Industrial chemicals for boilers, cooling towers, RO plants and water treatment systems.</p>
+<a class="btn" href="products.html">View Products</a>
 </section>
 
-<div class="container" id="products">
-
-<h2>Our Products</h2>
-
-<div class="products">
-
-<div class="card">
-<h3>Boiler Chemicals</h3>
-<ul>
-<li>AQUADET-121 – Anti Scalant & Corrosion Inhibitor</li>
-<li>AQUADET-122 – Sludge Conditioner</li>
-<li>AQUADET-123 – Sludge Conditioner</li>
-<li>AQUADET-124 – Polymer Inhibitor Blend</li>
-<li>AQUADET-125 – Alkalinity Builder</li>
-<li>AQUADET-126 – Organic pH Booster</li>
-<li>AQUADET-127 – Alkalinity Reducer</li>
-<li>AQUADET-128 – Oxygen Scavenger (Inorganic)</li>
-<li>AQUADET-129 – Oxygen Scavenger (Organic)</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Cooling Tower Chemicals</h3>
-<ul>
-<li>AQUADET-131 – Oxidizing Biocide</li>
-<li>AQUADET-132 – Non-Oxidizing Biocide</li>
-<li>AQUADET-133 – Corrosion & Scale Inhibitor</li>
-<li>AQUADET-134 – Bio Dispersant</li>
-<li>AQUADET-135 – High Silica Dispersant</li>
-<li>AQUADET-136 – Iron Dispersant</li>
-<li>AQUADET-137 – Polymer for Deposit Control</li>
-<li>AQUADET-138 – Carbamate Based Biocide</li>
-<li>AQUADET-139 – Corrosion Inhibitor</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>RO & Membrane Chemicals</h3>
-<ul>
-<li>AQUADET-141 – RO Anti Scalant</li>
-<li>AQUADET-142 – RO Anti Scalant for High TDS</li>
-<li>AQUADET-143 – Membrane Alkaline Cleaner</li>
-<li>AQUADET-144 – Membrane Acid Cleaner</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Water Treatment Solutions</h3>
-<ul>
-<li>ETP Chemicals</li>
-<li>STP Chemicals</li>
-<li>Dust Suppression Solutions</li>
-<li>Cooling Water Management</li>
-<li>Industrial Water Treatment</li>
-</ul>
-</div>
-
-</div>
-</div>
-
-<div class="container" id="about">
-<h2>About AQUADET</h2>
+<section class="about container">
+<h2>About AQUADET CORPORATION</h2>
 <p>
-AQUADET CORPORATION provides high quality industrial water treatment chemicals
-designed to improve system efficiency, reduce scaling, control corrosion and
-extend equipment life. Our solutions are widely used in boilers, cooling
-towers, RO systems, and wastewater treatment plants.
+AQUADET CORPORATION supplies industrial water treatment chemicals designed
+to control scaling, corrosion and microbiological growth in boilers,
+cooling towers and membrane systems.
 </p>
+</section>
+
+<section class="container features">
+
+<div class="feature">
+<h3>Boiler Chemicals</h3>
+<p>Anti scalants, sludge conditioners and corrosion inhibitors for efficient boiler operation.</p>
 </div>
 
-<div class="container" id="contact">
-<h2>Contact Us</h2>
-
-<div class="contact">
-<p><strong>Address:</strong><br>
-23 Tapti Nagar, Adhartal,<br>
-Jabalpur, Madhya Pradesh, 482004
-</p>
-
-<p><strong>Email:</strong><br>
-aquadet@gmail.com
-</p>
-
-<p><strong>Phone:</strong><br>
-+91 9301260788<br>
-+91 9479500500
-</p>
+<div class="feature">
+<h3>Cooling Tower Chemicals</h3>
+<p>Biocides, dispersants and corrosion inhibitors for cooling water systems.</p>
 </div>
 
+<div class="feature">
+<h3>RO Chemicals</h3>
+<p>Membrane cleaners and antiscalants for reverse osmosis plants.</p>
 </div>
+
+</section>
+
+<section id="contact" class="contact container">
+
+<h2>Contact</h2>
+
+<p>
+23 Tapti Nagar, Adhartal<br>
+Jabalpur, Madhya Pradesh 482004
+</p>
+
+<p>Email: aquadet@gmail.com</p>
+<p>Phone: 9301260788 / 9479500500</p>
+
+</section>
 
 <footer>
-<p>© 2026 AQUADET CORPORATION. All Rights Reserved.</p>
+© 2026 AQUADET CORPORATION
 </footer>
 
 </body>
