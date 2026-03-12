@@ -1,129 +1,207 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUADET CORPORATION | ISO 9001 Certified Chemical Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0a2342; /* Deep Navy Industrial */
+            --accent: #2ca58d;   /* Chemical Teal */
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --text-main: #333333;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--text-main); background: var(--bg-light); scroll-behavior: smooth; }
+        
+        /* Premium Header */
+        header { background: var(--white); padding: 1.5rem 5%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .logo-group h1 { font-size: 1.4rem; letter-spacing: 2px; color: var(--primary); }
+        .iso-badge { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        nav a { margin-left: 30px; text-decoration: none; color: var(--primary); font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
 
-<title>AQUADET CORPORATION</title>
+        /* Hero Section */
+        .hero { height: 90vh; background: linear-gradient(rgba(10, 35, 66, 0.85), rgba(10, 35, 66, 0.85)), url('https://images.unsplash.com/photo-1532187863486-abf9d39d99c5?auto=format&fit=crop&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 10%; }
+        .hero h2 { font-size: 4rem; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.2rem; max-width: 700px; opacity: 0.9; }
 
-<link rel="stylesheet" href="style.css">
+        /* Product Detail Section */
+        section { padding: 100px 8%; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.5rem; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+        .product-card { background: var(--white); border-radius: 12px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 6px solid var(--accent); }
+        .product-card h3 { color: var(--primary); font-size: 1.6rem; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        
+        .tech-spec { background: #f0f7f4; padding: 15px; border-radius: 8px; margin: 20px 0; font-size: 0.9rem; border: 1px solid #e0eee8; }
+        .tech-spec strong { color: var(--accent); }
+        
+        .benefit-list { list-style: none; }
+        .benefit-list li { position: relative; padding-left: 25px; margin-bottom: 12px; font-size: 0.95rem; }
+        .benefit-list li::before { content: "\f058"; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; left: 0; color: var(--accent); }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        /* Contact Section */
+        .contact-box { background: var(--primary); color: white; padding: 80px 10%; border-radius: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info div { margin-bottom: 30px; }
+        .contact-info i { font-size: 1.5rem; margin-right: 15px; color: var(--accent); }
 
+        footer { text-align: center; padding: 40px; background: #051121; color: #ffffff; font-size: 0.8rem; }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2.5rem; }
+            .contact-box { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-
-<div class="nav container">
-
-<div class="logo">AQUADET</div>
-
-<nav>
-
-<a href="index.html">Home</a> <a href="products.html">Products</a> <a href="#contact">Contact</a>
-
-</nav>
-
-</div>
-
+    <div class="logo-group">
+        <h1>AQUADET</h1>
+        <span class="iso-badge">An ISO 9001 Company</span>
+    </div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#boiler">BOILER</a>
+        <a href="#cooling">COOLING</a>
+        <a href="#ro">MEMBRANE</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
 </header>
 
-<section class="hero">
-
-<div class="container">
-
-<h1>Industrial Water Treatment Chemicals</h1>
-
-<p>
-High-performance solutions for boilers, cooling towers,
-reverse osmosis plants and industrial water treatment systems.
-</p>
-
-<a href="products.html" class="btn">View Product Catalogue</a>
-
-</div>
-
+<section class="hero" id="home">
+    <h2>Excellence in Chemical Solutions</h2>
+    <p>Providing high-performance, ISO-certified industrial water treatment chemicals for boiler systems, cooling towers, and reverse osmosis plants.</p>
 </section>
 
-<section class="container about">
-
-<h2>About AQUADET CORPORATION</h2>
-
-<p>
-
-AQUADET CORPORATION manufactures and supplies industrial
-water treatment chemicals designed to control scaling,
-corrosion and microbiological growth in industrial systems.
-Our chemicals are used in boilers, cooling towers,
-reverse osmosis plants and wastewater treatment facilities.
-
-</p>
-
+<section id="boiler">
+    <div class="section-header">
+        <h2>Boiler Treatment Series</h2>
+    </div>
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>AQUADET-121</h3>
+            <p><strong>Anti-scalant & Sludge Conditioner</strong></p>
+            <div class="tech-spec">
+                <strong>Mechanism:</strong> Organic-inorganic chelating agent designed for high-pressure systems[cite: 1, 2].
+            </div>
+            <ul class="benefit-list">
+                <li>Forms water-soluble sludge for easy blow-down[cite: 2].</li>
+                <li>Polymeric coating prevents precipitates from sticking[cite: 2].</li>
+                <li>Phosphate-based inhibitors prevent surface corrosion[cite: 3].</li>
+            </ul>
+        </div>
+        <div class="product-card">
+            <h3>AQUADET-122</h3>
+            <p><strong>Smoke Tube Specialist</strong></p>
+            <div class="tech-spec">
+                <strong>Feature:</strong> Specialized for internal treatment of soft water systems[cite: 4].
+            </div>
+            <ul class="benefit-list">
+                <li>Fluidizes existing sludge for efficient removal[cite: 5].</li>
+                <li>Powerful dispersant for Calcium and Iron[cite: 6].</li>
+                <li>Maintains peak heat transfer efficiency[cite: 7].</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<section class="container categories">
-
-<div class="category">
-
-<h3>Boiler Chemicals</h3>
-
-<p>
-Anti-scalants, corrosion inhibitors,
-sludge conditioners and oxygen scavengers
-for efficient boiler performance.
-</p>
-
-</div>
-
-<div class="category">
-
-<h3>Cooling Tower Chemicals</h3>
-
-<p>
-Biocides, biodispersants and scale inhibitors
-to maintain clean cooling water systems.
-</p>
-
-</div>
-
-<div class="category">
-
-<h3>RO & Membrane Chemicals</h3>
-
-<p>
-Antiscalants and membrane cleaning chemicals
-to protect RO systems and improve efficiency.
-</p>
-
-</div>
-
+<section id="cooling" style="background: #eef2f5;">
+    <div class="section-header">
+        <h2>Cooling Tower Management</h2>
+    </div>
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>AQUADET-131 (Oxidizing)</h3>
+            <ul class="benefit-list">
+                <li>Stabilized Bromine-based broad spectrum action[cite: 22].</li>
+                <li>Effective against ammonia-contaminant plant systems[cite: 23].</li>
+                <li><strong>Dosage:</strong> 30 PPM on makeup water, twice weekly[cite: 29].</li>
+            </ul>
+        </div>
+        <div class="product-card">
+            <h3>AQUADET-133 (Inhibitor)</h3>
+            <ul class="benefit-list">
+                <li>Multifunctional yellow metal corrosion protection[cite: 48].</li>
+                <li>Scale prevention in high pH (Alkaline) environments[cite: 50].</li>
+                <li><strong>Dosage:</strong> 30 PPM in re-circulating water[cite: 17].</li>
+            </ul>
+        </div>
+        <div class="product-card">
+            <h3>AQUADET-134 (Bio-Dispersant)</h3>
+            <ul class="benefit-list">
+                <li>Non-corrosive, low-foaming alkyl diamine[cite: 62].</li>
+                <li>Penetrates biological deposits to enhance biocide efficacy.</li>
+                <li>Biodegradable and environment friendly[cite: 20].</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<section id="contact" class="contact container">
+<section id="ro">
+    <div class="section-header">
+        <h2>RO Membrane Solutions</h2>
+    </div>
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>AQUADET-141 (Antiscalant)</h3>
+            <div class="tech-spec">
+                <strong>Standard Dose:</strong> 2 to 5 PPM Feed Water[cite: 76].
+            </div>
+            <ul class="benefit-list">
+                <li>Polymer-free organic formula prevents Carbonate/Sulphate scales[cite: 70].</li>
+                <li>Handles Silica up to 120 PPM in reject water[cite: 73].</li>
+            </ul>
+        </div>
+        <div class="product-card">
+            <h3>AQUADET-143 (Alkaline)</h3>
+            <ul class="benefit-list">
+                <li>Removes organic debris and biofouling[cite: 91].</li>
+                <li>Circulate at 3-4% concentration for 1 hour[cite: 94].</li>
+                <li>Compatible with EDI and standard RO systems[cite: 90].</li>
+            </ul>
+        </div>
+        <div class="product-card">
+            <h3>AQUADET-144 (Acidic)</h3>
+            <ul class="benefit-list">
+                <li>Cleans insoluble sulphates of Barium and Strontium[cite: 102].</li>
+                <li>Restores systems back to original design parameters[cite: 103].</li>
+            <li>pH (1% solution) < 2.0 for aggressive scale removal[cite: 105].</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-<h2>Contact</h2>
-
-<p>
-23 Tapti Nagar, Adhartal<br>
-Jabalpur, Madhya Pradesh 482004
-</p>
-
-<p>Email: aquadet@gmail.com</p>
-
-<p>Phone: 9301260788 / 9479500500</p>
-
+<section id="contact">
+    <div class="contact-box">
+        <div class="contact-info">
+            <h2>Connect With Us</h2>
+            <p>Our technical team provides customized water analysis and dosage selection software for optimized performance[cite: 77, 195].</p>
+            <div style="margin-top: 40px;">
+                <p><i class="fas fa-map-marker-alt"></i> 23 Tapti Nagar, Adhartal, Jabalpur, M.P. 482004</p>
+                <p><i class="fas fa-envelope"></i> aquadet@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9301260788 | +91 9479 500 500</p>
+            </div>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 15px;">
+            <h3>Quality Commitment</h3>
+            <ul class="benefit-list" style="margin-top:20px; color: white;">
+                <li>ISO 9001:2015 Certified Manufacturing[cite: 38].</li>
+                <li>Environmentally Degradable Molecules[cite: 25].</li>
+                <li>Low Dose Rate for Cost-Effective Operations[cite: 26].</li>
+                <li>Global Standard Shipping in 50/200L HDPE Drums[cite: 204].</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <footer>
-
-© 2026 AQUADET CORPORATION. All Rights Reserved.
-
+    <p>© 2026 AQUADET CORPORATION. All Rights Reserved. | Registered in Jabalpur, Madhya Pradesh, India.</p>
 </footer>
 
 </body>
-
 </html>
